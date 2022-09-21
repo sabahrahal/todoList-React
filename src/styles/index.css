@@ -1,12 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+body{
+    background-image: url("https://img.freepik.com/fotos-premium/viejo-mapa-marino-mar-mediterraneo-pequena-brujula_176814-882.jpg?w=2000");
+    font-family: 'Kaushan Script', cursive;
+    color:#814C29; 
+}
+
+.title{
+    font-size: 100px;
+    color:#fcc26a;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form input{
+    width: 400px;
+    margin-right: 20px;
+    background-color: #fcc26abb;
+    color: #814C29;
+    border-color: #ffe39dd2;
+    border-radius: 10px;
+}
+
+.form input:focus{
+    outline:none; 
+}
+
+.form button {
+    width: 150px;
+    background-color: #fcc26abb;
+    color: #814C29; 
+    border-color: #fcc26a;
+    border-radius: 10px;
+}
+
+.list{
+    background: #fcc26abb; 
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.list ul {
+    list-style:none;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.list ul li{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffc876;
+    font-size: 20px;
+}
+
+.list ul li:last-child{
+    border-bottom: 0px;
+}
+
+.trash{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trash:hover{
+    cursor: pointer;
+    color: rgb(248, 52, 52);
+    transform: scale(1.2);
+}
+
+#items{
+    font-size: 15px;
+    color: red;
+}
