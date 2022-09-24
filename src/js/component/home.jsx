@@ -1,4 +1,5 @@
 import React from "react";
+import { Todo } from "./Todo.jsx";
 import { TodoList } from "./TodoList.jsx";
 
 
@@ -6,7 +7,7 @@ import { TodoList } from "./TodoList.jsx";
 const Home = () => {
 	return (
 		<div>
-			<TodoList/>
+			<Todo/>
 		</div>
 	);
 };
