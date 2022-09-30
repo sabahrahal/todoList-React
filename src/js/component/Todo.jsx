@@ -25,14 +25,15 @@ export const Todo = ()=> {
             <div className="list">
                 <ul>
                    {        list.map((listElement, index)=>{
-                            return <li key={index} onMouseOver={()=>{
+                            return <li key={index} onMouseOver={(event)=>{
                                 setDisable(true);
                             }}
                             
-                            onMouseOut={()=>{
+                            onMouseOut={(event)=>{
                                 setDisable(false);
                             }}
-                            > {listElement} <a className={disable===false ? "trash disable" : "trash"} onClick={()=>{
+
+                            > {listElement} <a key={index} className={disable ? "trash" : "trash disable"} onClick={(event)=>{
                             setList(list.filter((element,id)=>{
                                 return index !== id; 
                             }))
